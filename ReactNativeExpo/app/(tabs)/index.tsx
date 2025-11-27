@@ -1,28 +1,10 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Song List</Text>
-      <Text style={styles.subtitle}>Home Page</Text>
+    <View className="flex-1 justify-center items-center bg-white">
+      <Text className="text-2xl font-bold">Song List</Text>
+      <Text className="mt-2 text-base text-blue-600">Home Page</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  title: {
-    fontSize: 26,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    marginTop: 10,
-    fontSize: 16,
-    color: "#666",
-  },
-});
