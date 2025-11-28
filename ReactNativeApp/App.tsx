@@ -19,10 +19,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   return (
     <View style={styles.sectionContainer}>
       <Text
-        style={[
-          styles.sectionTitle,
-          {color: isDarkMode ? '#fff' : '#000'},
-        ]}>
+        style={[styles.sectionTitle, {color: isDarkMode ? '#fff' : '#000'}]}>
         {title}
       </Text>
       <Text
@@ -50,9 +47,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={{flex: 1}}>
+      <ScrollView contentInsetAdjustmentBehavior="automatic" style={{flex: 1}}>
         <View
           style={{
             backgroundColor: isDarkMode ? '#000' : '#fff',
