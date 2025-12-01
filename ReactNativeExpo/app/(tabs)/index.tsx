@@ -1,10 +1,19 @@
-import { View, Text } from "react-native";
+import { Box, Text, Button } from "@gluestack-ui/themed";
 
 export default function HomeScreen() {
   return (
-    <View className="flex-1 justify-center items-center bg-white">
-      <Text className="text-2xl font-bold">Song List</Text>
-      <Text className="mt-2 text-base text-blue-600">Home Page</Text>
-    </View>
+    <Box flex={1} justifyContent="center" alignItems="center" bg="$white">
+      <Text fontSize="$2xl" fontWeight="$bold">
+        Song List
+      </Text>
+
+      <Text mt="$2" fontSize="$lg" color="$blue600">
+        Home Page
+      </Text>
+
+      <Button action="primary" mt="$4">
+        <Text>Click me</Text>
+      </Button>
+    </Box>
   );
 }
